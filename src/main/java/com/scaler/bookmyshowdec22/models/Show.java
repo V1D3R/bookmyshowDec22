@@ -20,7 +20,7 @@ public class Show extends BaseModel{
     @ManyToOne
     private Screen screen;
     @Enumerated(EnumType.ORDINAL)
-    @ElementCollection
+    @ElementCollection //Creates a maaping table
     private List<Feature> features;
 
 }
