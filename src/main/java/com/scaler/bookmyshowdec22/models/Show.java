@@ -9,7 +9,7 @@ import java.util.List;
 
 @Getter
 @Setter
-@Entity(name = "shows")
+@Entity(name = "shows") // Show is a keyword in MySQL, so need to specify (name = "shows") to be used as a Table name.
 public class Show extends BaseModel{
     // 1 : 1
     // M : 1
