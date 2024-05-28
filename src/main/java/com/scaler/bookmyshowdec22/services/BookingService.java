@@ -37,7 +37,7 @@ public class BookingService {
         this.bookingRepository = bookingRepository;
         this.priceCalculator = priceCalculator;
     }
-    @Transactional(isolation = Isolation.SERIALIZABLE)
+    @Transactional(isolation = Isolation.SERIALIZABLE) // Method Level Transaction
     public Booking bookMovie(
             Long userId,
             List<Long> showSeatIds,
