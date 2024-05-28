@@ -10,7 +10,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.stereotype.Repository;
 import org.springframework.stereotype.Service;
 
-@Controller
+@Controller //Special class as its object will be created by the framework, so its constructor needs to be there
 //@Service
 //@Repository
 public class BookingController {
